@@ -1,0 +1,241 @@
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#1a1a1a;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#2b2b2b;
+    color:white;
+    border-bottom: 2px solid #B06700;
+    border-radius: 0px 0px 15px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Content Card */
+.content-card{
+    width:80%;
+    max-width:800px;
+    margin:40px auto;
+    background:#2b2b2b;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+/* Headings */
+h1{
+    color:#ffc107;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#B06700;
+}
+
+/* Profile Picture */
+#profile-frame img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:5px solid #B06700;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+/* Paragraph */
+p{
+    line-height:1.6;
+    color: white ;
+}
+
+/* Lists */
+ul,
+ol{
+    text-align:left;
+    margin-left:40px;
+    margin-top:10px;
+    color: white;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid white;
+}
+
+th{
+    background:#B06700;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+    color: white;
+}
+/* Form */
+form{
+    text-align:left;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background-color: #d3d3d3;
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input[type="submit"]{
+    background:#B06700;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+input[type="submit"]:hover{
+    background:#ffc107;
+}
+
+/* Links */
+a{
+    color:#ffc107;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Header */
+header{
+    width:100%;
+}
+
+/* Main */
+main{
+    padding:20px;
+}
+
+/* Footer */
+footer{
+    background:#2b2b2b;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+/* Stack the logo and menu vertically */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Add space between logo and menu */
+    nav ul {
+        margin-top: 15px;
+    }
+
+    /* Reduce margins between menu items */
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    /* Make content card take up more width on mobile */
+    .content-card {
+        width: 95%;
+    }
+    
+       /* TABLE MOBILE FIXES */
+    /* Allows the table to be scrolled horizontally if it's too wide */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Adjust font and padding for smaller screens */
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Style for the Social Icons */
+.social-links {
+    margin-bottom: 15px;
+    font-size: 24px; /* Adjust this to make icons bigger or smaller */
+}
+
+.social-links a {
+    color: #ffc107; /* Your gold theme color */
+    margin: 0 15px; /* Space between icons */
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white; /* Icons turn white on hover */
+    transform: scale(1.2); /* Slightly enlarges icon on hover */
+    display: inline-block;
+}
